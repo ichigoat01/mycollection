@@ -1,0 +1,141 @@
+:root {
+    --main-color:#0F1829;
+    --prim-color:#1D2637;
+    --sec-color:#6266FA;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: var(--main-color);
+}
+.nav{
+    height:65px;
+    background-color: var(--sec-color);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+    font-family: "konit" , sans-serif;
+}
+.nav ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+.hero{
+    width:90vw;
+    margin:auto;
+    height:calc(100vh - 65px);
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
+}
+.content{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.heading{
+    font-size:1.8rem;
+    color:white;
+    width: 100%;
+
+}
+p{
+    font-family: "poppins", sans-serif;
+    color:rgb(231, 226, 226 , 0.6);
+    font-size: 0.98em;
+    line-height: 1.625;
+}
+.para{
+    padding-left:200px;
+}
+.main{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 35px;
+    width:100%;
+    margin:auto;
+    height:auto;
+}
+.card{
+    background-color: var(--prim-color);
+    height: 350px;
+    /* width:280px; */
+    width:100%;
+}
+.head{
+    /* color: #6b6fea; */
+    color:var(--sec-color);
+    font-size:0.7rem;
+    margin-bottom:5px;
+}
+.title{
+    color: white;
+    font-size:1.1rem;
+    margin-bottom:20px;
+}
+.pic{
+    height:150px;
+    margin:22px;
+    background-color:#222b3d;
+
+}
+.pic img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.details{
+    margin:22px;
+}
+@media only screen and (max-width: 1279px){
+    .main{
+        grid-template-columns:1fr 1fr;
+        row-gap: 35px;
+    }
+    .content{
+        width:100%;
+    }
+    :root {
+        --sec-color:orange;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .upper{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+    }
+    .para{
+        padding:0;
+    }
+    :root {
+        --sec-color:rgb(80, 152, 234);
+    }
+}
+@media only screen and (max-width: 761px){
+    .main{
+        grid-template-columns:1fr;
+        row-gap: 35px;
+    }
+    :root {
+        --sec-color:red;
+    }
+}

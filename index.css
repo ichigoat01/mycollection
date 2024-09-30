@@ -1,0 +1,135 @@
+:root {
+    --main-color:#0F1829;
+    --prim-color:#1D2637;
+    --sec-color:#6266FA;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-color);
+}
+.nav{
+    height:65px;
+    background-color: var(--sec-color);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+}
+.nav ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color:white;
+    height:calc(100vh - 65px);
+    gap:70px;
+    width:90vw;
+    margin:auto;
+}
+.write{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    width:60%;
+}
+.head{
+    color: #fff;
+    font-size: 1.875rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.para{
+    text-align:center;
+    font-family: "poppins", sans-serif;
+    color:rgb(231, 226, 226 , 0.6);
+    font-size: 0.98em;
+    line-height: 1.625;
+}
+svg{
+    color:white;
+    fill:none;
+    stroke: var(--sec-color);
+    stroke-width: 3;
+    padding:0;
+    height:25px;
+    width: 25px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: var(--prim-color); */
+    grid-row-gap:20px;
+    grid-column-gap:20px;
+    width:70%;
+}
+h3{
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    height: 60px;
+    /* width:500px; */
+    width:100%;
+
+    background-color: var(--prim-color);
+    justify-content: left;
+    align-items: center;
+    gap:20px;
+    padding-left:10px;
+}
+.btn{
+    width:120px;
+    height:50px;
+    background-color: var(--sec-color);
+    border-radius: 5px;
+    border:1px solid var(--sec-color);
+    color:white;
+    font-size:1.1rem;
+}
+@media only screen and (max-width: 983px) {
+    .main{
+        width:100%
+    }
+    .write{
+        width:80%;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .main{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+    .write{
+        width:100%;
+    }
+    .head{
+        font-size: 1.2rem;
+    }
+    .hero{
+        height:auto;
+        padding:80px 0;
+        
+    }
+}
+@media only screen and (max-width: 418px) {
+    #shift{
+        display: none;
+    }
+}

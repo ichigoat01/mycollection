@@ -1,0 +1,115 @@
+:root {
+    --main-color:#0F1829;
+    --prim-color:#1D2637;
+    --sec-color:#6266FA;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: var(--main-color);
+}
+.nav{
+    height:65px;
+    background-color: var(--sec-color);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+    font-family: "konit" , sans-serif;
+}
+.nav ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+.hero{
+    width:818px;
+    height:auto;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+    border:1px solide white;
+}
+.pic{
+    width:50%;
+    height:46vh;
+    background-color: var(--prim-color);
+}
+.title{
+    font-size:2.2rem;
+    color:white;
+    margin-top:40px;
+    margin-bottom:20px;
+    text-align: center;
+}
+.para{
+    font-family: "poppins", sans-serif;
+    color:rgb(231, 226, 226 , 0.6);
+    font-size: 1em;
+    line-height: 1.625;
+    text-align: center;
+    margin-bottom:30px;
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:17px;
+}
+.btn{
+    width:100px;
+    height:40px;
+    color:white;
+    background-color: var(--sec-color);
+    border:1px solid var(--sec-color);
+    font-size:1rem;
+    border-radius:4px;
+}
+.kuroi{
+    background-color: var(--prim-color);
+    border:1px solid var(--prim-color);
+}
+@media only screen and (max-width: 1244px){
+    .hero{
+        width:622px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .hero{
+        width:730px;
+    }
+}
+@media only screen and (max-width: 770px){
+    .hero{
+        width:560px;
+    }
+    .pic{
+        width:90%;
+    }
+}
+@media only screen and (max-width: 592px){
+    .hero{
+        width:90%;
+    }
+}
+@media only screen and (max-width: 435px){
+    #shift{
+        display: none;
+    }
+}
